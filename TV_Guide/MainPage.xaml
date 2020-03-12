@@ -1,0 +1,99 @@
+﻿<Page
+    x:Class="TV_Guide.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TV_Guide"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="LightBlue">
+
+    <Grid>
+ 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>     
+        
+        <NavigationView x:Name="NavigationViewControl" PaneDisplayMode="LeftCompact" Background="LightBlue" Grid.RowSpan="3">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="All Shows" Icon="Home" x:Name="AllShows" />
+                <NavigationViewItem Content="Channels" Icon="Delete" x:Name="Channel" />
+                <!--FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE700;"/-->
+                <NavigationViewItem Content="Genre" Icon ="Account" x:Name="Genre" />
+            </NavigationView.MenuItems>
+        </NavigationView>
+
+        <Button x:Name="gotButton" Click="GotButton_Click" Background="LightBlue" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="0">
+            <StackPanel>
+                <Image Source="Images/GOT.jpg" Stretch="Fill"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="bbButton" Click="BbButton_Click" Background="LightBlue" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="0">
+            <StackPanel>
+                <Image Source="Images/BB.jpg" Stretch="Fill"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="saulButton" Click="SaulButton_Click" Background="LightBlue" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3" Grid.Row="0">
+            <StackPanel>
+                <Image Source="Images/Saul.jpg" Stretch="Fill"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="strangerButton" Click="StrangerButton_Click" Background="LightBlue" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Grid.Row="0">
+            <StackPanel>
+                <Image Source="Images/ST.jpg" Stretch="Fill"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="wwButton" Click="WwButton_Click" Background="LightBlue" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1">
+            <StackPanel>
+                <Image Source="Images/WW.jpg" Stretch="Fill"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="adButton" Click="AdButton_Click" Background="LightBlue" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="1">
+            <StackPanel>
+                <Image Source="Images/AD.jpg" Stretch="Fill"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="sopranosButton" Click="SopranosButton_Click" Background="LightBlue" Grid.Column="3" Grid.Row="1">
+            <StackPanel>
+                <Image Source="Images/Sopranos.jpg" Stretch="Fill"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="chernobylButton" Click="ChernobylButton_Click" Background="LightBlue" Grid.Column="4" Grid.Row="1">
+            <StackPanel>
+                <Image Source="Images/Chernobyl.jpg" Stretch="Fill"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="bojackButton" Click="BojackButton_Click" Background="LightBlue" Grid.Column="1" Grid.Row="2">
+            <StackPanel>
+                <Image Source="Images/bojack.jpg" Stretch="Fill"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="fleabagButton" Click="FleabagButton_Click" Background="LightBlue" Grid.Column="2" Grid.Row="2">
+            <StackPanel>
+                <Image Source="Images/fleabag.jpg" Stretch="Fill"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="witcherButton" Click="WitcherButton_Click" Background="LightBlue" Grid.Column="3" Grid.Row="2">
+            <StackPanel>
+                <Image Source="Images/witcher.jpg" Stretch="Fill"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="theBoysButton" Click="TheBoysButton_Click" Background="DarkSlateGray" Grid.Column="4" Grid.Row="2">
+            <StackPanel>
+                <Image Source="Images/the_boys.jpg" Stretch="Fill"/>
+            </StackPanel>
+        </Button>
+
+
+    </Grid>
+
+</Page>
